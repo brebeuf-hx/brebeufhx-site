@@ -42,6 +42,14 @@ function updateGlobalLanguage() {
             el.innerHTML = text;
         }
     });
+    
+    // Update placeholders for input elements
+    document.querySelectorAll(':not(faq-item):not(timeline-item):not(navbar-component):not(feature-card):not(navbar-component):not(base-component) [data-en-placeholder][data-fr-placeholder]').forEach(el => {
+        const placeholder = el.getAttribute(`data-${currentLang}-placeholder`);
+        if (placeholder) {
+            el.placeholder = placeholder;
+        }
+    });
 }
 
 // Set initial language based on navbar's default

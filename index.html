@@ -199,10 +199,10 @@
                 </div>
             </div>
             <div class="flex items-center justify-center flex-col text-center register-form bg-white/10 backdrop-blur-md p-8 mt-12 rounded-2xl border border-white/20">
-                <h3 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="Register Now" data-fr="S'inscrire maintenant">Register Now</h3>
-                <p class="text-ice-blue-100 mb-6" data-en="Fill out our Google Form to secure your spot!" data-fr="Remplissez notre formulaire Google pour réserver votre place!">Fill out our Google Form to secure your spot!</p>
+                <!-- <h3 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="Register Now" data-fr="S'inscrire maintenant">Register Now</h3>
+                <p class="text-ice-blue-100 mb-6" data-en="Fill out our Google Form to secure your spot!" data-fr="Remplissez notre formulaire Google pour réserver votre place!">Fill out our Google Form to secure your spot!</p> -->
                 <!-- Form link button -->
-                <a 
+                <!-- <a 
                     href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" 
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -210,7 +210,14 @@
                     data-en="❄️ Open Registration Form" 
                     data-fr="❄️ Ouvrir le formulaire d'inscription">
                     ❄️ Open Registration Form
-                </a>
+                </a> -->
+            <h3 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="Stay Updated" data-fr="Restes à jour">Stay Updated</h3>
+            <p class="text-ice-blue-100 mb-6" data-en="Get notified when registration opens and receive exclusive updates!" data-fr="Sois notifié quand l'inscription ouvre et reçois des mises à jour exclusives!">Get notified when registration opens and receive exclusive updates!</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md">
+                <input type="email" placeholder="Enter your email" data-en-placeholder="Enter your email" data-fr-placeholder="Ton courriel" class="px-6 py-3 rounded-full text-lg border-2 border-white bg-white/10 backdrop-blur-sm text-white placeholder-white/70 focus:outline-none focus:border-ice-blue-200 transition-all flex-1">
+                <button class="flex items-center justify-center bg-gradient-to-r from-white to-ice-blue-100 text-ice-blue-700 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all whitespace-nowrap" data-en="❄️ Subscribe" data-fr="❄️ M'abonner">❄️ Subscribe</button>
+            </div>
             </div>
         </div>
         <div class="absolute bottom-0 left-0 right-0 h-24 bg-white" style="clip-path: polygon(0 100%, 100% 100%, 0% 70%);"></div>
@@ -258,33 +265,28 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-5">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-ice-blue-400">❄️ BrébeufHx</h3>
-                    <p class="text-gray-400" data-en="Québec's biggest pre-university hackathon" data-fr="Le plus grand hackathon pré-universitaire du Québec">Québec's biggest pre-university hackathon</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="About" data-fr="À propos">About</a></li>
-                        <li><a href="#schedule" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Schedule" data-fr="Horaire">Schedule</a></li>
-                        <li><a href="#register" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Register" data-fr="S'inscrire">Register</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Connect" data-fr="Se connecter">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
+        <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-ice-blue-400">❄️ BrébeufHx</h3>
+                <p class="text-gray-400" data-en="Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators. Contact us at team [at] brebeufhackathon [dot] com for any questions or inquiries." data-fr="Le plus grand hackathon pré-universitaire du Québec. Organisé avec ❤️ pour les futurs innovateurs du Québec. Contacte-nous à l'adresse team [arobas] brebeufhackathon [point] com pour toute question.">Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators. Contact us at team [at] brebeufhackathon [dot] com for any questions or inquiries.</p>
             </div>
-            <div class="text-center pt-8 border-t border-gray-800">
-                <p class="text-gray-500" data-en="&copy; 2024 BrébeufHx. Made with ❤️ for Québec's future innovators." data-fr="&copy; 2024 BrébeufHx. Fait avec ❤️ pour les futurs innovateurs du Québec.">&copy; 2024 BrébeufHx. Made with ❤️ for Québec's future innovators.</p>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="About" data-fr="À propos">About</a></li>
+                    <li><a href="#schedule" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Schedule" data-fr="Horaire">Schedule</a></li>
+                    <li><a href="#register" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Register" data-fr="S'inscrire">Register</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Connect" data-fr="Se connecter">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/brebeufhx" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/BrebeufHx" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.linkedin.com/company/brebeufhx" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
     </footer>

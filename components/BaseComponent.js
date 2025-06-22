@@ -41,6 +41,14 @@ class BaseComponent extends HTMLElement {
                 el.innerHTML = text;
             }
         });
+        
+        // Update placeholders for input elements within this component
+        this.querySelectorAll('[data-en-placeholder][data-fr-placeholder]').forEach(el => {
+            const placeholder = el.getAttribute(`data-${this.lang}-placeholder`);
+            if (placeholder) {
+                el.placeholder = placeholder;
+            }
+        });
     }
 }
 

@@ -43,9 +43,16 @@ class HeroSection extends BaseComponent {
                         24 hours of coding, creating, and connecting. Build solutions that change the world.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#register" class="flex items-center justify-center bg-gradient-to-r from-white to-ice-blue-100 text-ice-blue-700 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all" data-en="❄️ Register" data-fr="❄️ S'inscrire">❄️ Register</a>
-                        <a href="#about" class="flex items-center justify-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white hover:text-ice-blue-700 transition-all" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
+                        <!-- <a href="#register" class="flex items-center justify-center bg-gradient-to-r from-white to-ice-blue-100 text-ice-blue-700 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all" data-en="❄️ Register" data-fr="❄️ S'inscrire">❄️ Register</a>
+                        <a href="#about" class="flex items-center justify-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white hover:text-ice-blue-700 transition-all" data-en="Learn More" data-fr="En savoir plus">Learn More</a> -->
+
+                        <!-- Email signup for registration notifications -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <input type="email" placeholder="Enter your email" data-en-placeholder="Enter your email" data-fr-placeholder="Ton courriel" class="px-6 py-3 rounded-full text-lg border-2 border-white bg-white/10 backdrop-blur-sm text-white placeholder-white/70 focus:outline-none focus:border-ice-blue-200 transition-all">
+                            <button class="flex items-center justify-center bg-gradient-to-r from-white to-ice-blue-100 text-ice-blue-700 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all" data-en="❄️ Get Notified" data-fr="❄️ M'abonner">❄️ Get Notified</button>
+                        </div>
                     </div>
+                    <p class="text-white/80 text-sm mt-4 mx-auto" data-en="We'll notify you when registration opens and share exclusive updates!" data-fr="On te notifiera quand l'inscription ouvre et on te partagera des mises à jour exclusives!">We'll notify you when registration opens and share exclusive updates!</p>
                 </div>
             </section>
         `;
