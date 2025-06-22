@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrébeufHx - Components Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-blue': {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    animation: {
+                        'fall': 'fall 10s linear infinite',
+                        'snowfall': 'snowfall 8s linear infinite',
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                        'fade-in-down': 'fadeInDown 0.6s ease-out',
+                        'fade-in-left': 'fadeInLeft 0.6s ease-out',
+                        'fade-in-right': 'fadeInRight 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out'
+                    },
+                    keyframes: {
+                        fall: {
+                            '0%': { transform: 'translateY(-100vh)', opacity: '0' },
+                            '10%': { opacity: '1' },
+                            '90%': { opacity: '1' },
+                            '100%': { transform: 'translateY(100vh)', opacity: '0' }
+                        },
+                        snowfall: {
+                            '0%': { transform: 'translateY(-100vh) rotate(0deg)', opacity: '0' },
+                            '10%': { opacity: '1' },
+                            '90%': { opacity: '1' },
+                            '100%': { transform: 'translateY(100vh) rotate(360deg)', opacity: '0' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        fadeInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.8)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(50px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar Component -->
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section Component -->
+    <hero-section></hero-section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white relative">
+        <div class="absolute top-0 right-0 left-0 h-12 bg-gradient-to-r from-ice-blue-500 to-ice-blue-700" style="clip-path: polygon(0 100%, 100% 0, 0 0)"></div>
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-en="About BrébeufHx" data-fr="À propos de BrébeufHx">About BrébeufHx</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-en="A 24-hour hackathon for Quebec high school and CÉGEP students" data-fr="Un hackathon de 24 heures pour les étudiants du secondaire et du CÉGEP du Québec">A 24-hour hackathon for Quebec high school and CÉGEP students</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <feature-card
+                    icon="🚀"
+                    title-en="Build Amazing Projects" 
+                    title-fr="Construis des Projets Incroyables"
+                    description-en="Work on innovative projects that solve real-world problems"
+                    description-fr="Travaille sur des projets innovants qui résolvent des problèmes réels">
+                </feature-card>
+                <feature-card
+                    icon="🎓" 
+                    title-en="Learn from Experts" 
+                    title-fr="Apprends des Experts"
+                    description-en="Get mentored by industry professionals and experienced developers"
+                    description-fr="Sois mentoré par des professionnels de l'industrie et des développeurs expérimentés">
+                </feature-card>
+                <feature-card
+                    icon="🏆"
+                    title-en="Win Prizes" 
+                    title-fr="Gagne des Prix"
+                    description-en="Compete for amazing prizes and recognition in the tech community"
+                    description-fr="Compète pour des prix incroyables et de la reconnaissance dans la communauté tech">
+                </feature-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-ice-blue-600 relative">
+        <div class="absolute top-0 left-0 right-0 h-12 bg-white" style="clip-path: polygon(0 0, 0 75%, 20% 0, 40% 75%, 60% 0%, 80% 75%, 100% 0%)"></div>
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
+                <stats-card number="24" label-en="Hours" label-fr="Heures"></stats-card>
+                <stats-card number="100+" label-en="Participants" label-fr="Participants"></stats-card>
+                <stats-card number="1-4" label-en="Team Size" label-fr="Taille d'Équipe"></stats-card>
+                <stats-card number="∞" label-en="Possibilities" label-fr="Possibilités"></stats-card>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-12 bg-ice-blue-50" style="clip-path: polygon(0 100%, 50% 50%, 100% 100%)"></div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-24 bg-ice-blue-50">
+        <div class="max-w-4xl mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-en="Event Schedule ⏰" data-fr="Horaire de l'événement ⏰">Event Schedule</h2>
+                <!-- <p class="text-xl text-gray-600" data-en="24 hours of coding, learning, and fun" data-fr="24 heures de programmation, d'apprentissage et de plaisir">24 hours of coding, learning, and fun</p> -->
+            </div>  
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-ice-blue-400 to-ice-blue-600 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-8">
+                    <timeline-item 
+                        title-en="❄️ Day 1 - Opening" 
+                        title-fr="❄️ Jour 1 - Ouverture"
+                        description-en="Registration & check-in<br/>Opening ceremony<br/>Team formation<br/>Hacking begins!"
+                        description-fr="Inscription et accueil<br/>Cérémonie d'ouverture<br/>Formation des équipes<br/>Le hackathon commence !"
+                        index="0">
+                    </timeline-item>
+                    <timeline-item 
+                        title-en="🧊 Day 1 - Building" 
+                        title-fr="🧊 Jour 1 - Construction"
+                        description-en="Workshops & Mentorship<br/>Team building activities<br/>Midnight snack!"
+                        description-fr="Ateliers et mentorat<br/>Activités de formation d'équipe<br/>Collation de minuit !"
+                        index="1">
+                    </timeline-item>
+                    <timeline-item 
+                        title-en="🏆 Day 2 - Final Push" 
+                        title-fr="🏆 Jour 2 - Poussée finale"
+                        description-en="Final sprint<br/>Project submission<br/>Presentations<br/>Awards ceremony"
+                        description-fr="Derniers efforts<br/>Soumission des projets<br/>Présentations<br/>Cérémonie de remise des prix"
+                        index="2">
+                    </timeline-item>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section id="register" class="py-24 bg-gradient-to-br from-ice-blue-400 via-ice-blue-500 to-ice-blue-700 text-white relative">
+        <div class="absolute top-0 left-0 right-0 h-24 bg-ice-blue-50" style="clip-path: polygon(0 0, 100% 0, 100% 75%, 0 25%);"></div>
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 class="section-title text-4xl font-bold text-center mb-12" data-en="Ready to join? ❄️" data-fr="Prêt à participer ? ❄️">Ready to Join? ❄️</h2>
+            <div class="register-content grid md:grid-cols-2 gap-12">
+                <div class="flex flex-col items-center justify-start">
+                    <h3 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="Who can participate?" data-fr="Qui peut participer ?">Who can participate?</h3>
+                    <ul class="space-y-2 list-disc list-inside">
+                        <li data-en="High school students (Secondary 3-5)" data-fr="Étudiants du secondaire (Secondaire 3-5)">High school students (Secondary 3-5)</li>
+                        <li data-en="CÉGEP students" data-fr="Étudiants du CÉGEP">CÉGEP students</li>
+                        <li data-en="All skill levels welcome!" data-fr="Tous les niveaux de compétence sont les bienvenus !">All skill levels welcome!</li>
+                        <li data-en="No coding experience required" data-fr="Aucune expérience en programmation requise">No coding experience required</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center justify-start">
+                    <h4 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="What you'll get:" data-fr="Ce que vous obtiendrez :">What you'll get:</h4>
+                    <ul class="space-y-2 list-disc list-inside">
+                        <li data-en="Free food & snacks" data-fr="Nourriture et collations gratuites">Free food & snacks</li>
+                        <li data-en="Workshops & mentorship" data-fr="Ateliers et mentorat">Workshops & mentorship</li>
+                        <li data-en="Amazing prizes" data-fr="Prix incroyables">Amazing prizes</li>
+                        <li data-en="Networking opportunities" data-fr="Opportunités de réseautage">Networking opportunities</li>
+                        <li data-en="Memories that last a lifetime" data-fr="Des souvenirs qui durent toute une vie">Memories that last a lifetime</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center justify-center flex-col text-center register-form bg-white/10 backdrop-blur-md p-8 mt-12 rounded-2xl border border-white/20">
+                <h3 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="Register Now" data-fr="S'inscrire maintenant">Register Now</h3>
+                <p class="text-ice-blue-100 mb-6" data-en="Fill out our Google Form to secure your spot!" data-fr="Remplissez notre formulaire Google pour réserver votre place!">Fill out our Google Form to secure your spot!</p>
+                <!-- Form link button -->
+                <a 
+                    href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-block w-fit bg-gradient-to-r from-white to-ice-blue-100 text-ice-blue-700 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+                    data-en="❄️ Open Registration Form" 
+                    data-fr="❄️ Ouvrir le formulaire d'inscription">
+                    ❄️ Open Registration Form
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-white" style="clip-path: polygon(0 100%, 100% 100%, 0% 70%);"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-en="Frequently Asked Questions" data-fr="Foire aux questions">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600" data-en="Everything you need to know about BrébeufHx" data-fr="Tout ce que tu as besoin de savoir à propos de BrébeufHx">Everything you need to know about BrébeufHx</p>
+            </div>
+            
+            <div class="flex flex-col space-y-4">
+                <faq-item 
+                    question-en="Who can participate?" 
+                    question-fr="Qui peut participer?"
+                    answer-en="BrébeufHx is open to all Quebec high school and CÉGEP students. No prior coding experience required!"
+                    answer-fr="BrébeufHx est ouvert à tous les étudiants du secondaire et du CÉGEP du Québec. Aucune expérience en programmation requise!">
+                </faq-item>
+                
+                <faq-item 
+                    question-en="What should I bring?" 
+                    question-fr="Que devrais-je apporter?"
+                    answer-en="Bring your laptop, charger, and enthusiasm! We'll provide food, drinks, and a great environment."
+                    answer-fr="Apporte ton ordinateur portable, ton chargeur et ton enthousiasme! Nous fournirons la nourriture, les boissons et un excellent environnement.">
+                </faq-item>
+                
+                <faq-item 
+                    question-en="How do teams work?" 
+                    question-fr="Comment fonctionnent les équipes?"
+                    answer-en="You can work alone or in teams of up to 4 people. We'll help you find teammates if needed!"
+                    answer-fr="Tu peux travailler seul ou en équipes de jusqu'à 4 personnes. Nous t'aiderons à trouver des coéquipiers si nécessaire!">
+                </faq-item>
+                
+                <faq-item 
+                    question-en="What are the prizes?" 
+                    question-fr="Quels sont les prix?"
+                    answer-en="Amazing prizes including tech gadgets, gift cards, and recognition in the tech community!"
+                    answer-fr="Des prix incroyables incluant des gadgets technologiques, des cartes-cadeaux et de la reconnaissance dans la communauté tech!">
+                </faq-item>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-ice-blue-400">❄️ BrébeufHx</h3>
+                    <p class="text-gray-400" data-en="Québec's biggest pre-university hackathon" data-fr="Le plus grand hackathon pré-universitaire du Québec">Québec's biggest pre-university hackathon</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="About" data-fr="À propos">About</a></li>
+                        <li><a href="#schedule" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Schedule" data-fr="Horaire">Schedule</a></li>
+                        <li><a href="#register" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Register" data-fr="S'inscrire">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Connect" data-fr="Se connecter">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-gray-800">
+                <p class="text-gray-500" data-en="&copy; 2024 BrébeufHx. Made with ❤️ for Québec's future innovators." data-fr="&copy; 2024 BrébeufHx. Fait avec ❤️ pour les futurs innovateurs du Québec.">&copy; 2024 BrébeufHx. Made with ❤️ for Québec's future innovators.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load Components -->
+    <script src="script.js"></script>
+    <script src="components/BaseComponent.js"></script>
+    <script src="components/Navbar.js"></script>
+    <script src="components/HeroSection.js"></script>
+    <script src="components/FeatureCard.js"></script>
+    <script src="components/TimelineItem.js"></script>
+    <script src="components/FAQItem.js"></script>
+    <script src="components/StatsCard.js"></script>
+</body>
+</html> 
