@@ -19,12 +19,12 @@ class FAQItem extends BaseComponent {
         this.innerHTML = `
             <div class="bg-white hover:bg-ice-blue-50 border border-ice-blue-200 px-6 py-4 rounded-2xl overflow-hidden">
                 <button class="faq-question relative w-full text-left transition-colors flex justify-between items-center">
-                    <span class="font-semibold text-gray-800" data-en="${questionEn}" data-fr="${questionFr}">${questionEn}</span>
+                    <span class="text-xl font-semibold text-gray-800" data-en="${questionEn}" data-fr="${questionFr}">${questionEn}</span>
                     <span class="faq-icon text-ice-blue-500 text-xl transition-transform duration-300">+</span>
                     <div class="faq-spacer hidden absolute bottom-0 left-6 right-6 h-[0.0625rem] rounded-full bg-ice-blue-200"></div>
                 </button>
-                <div class="faq-answer hidden">
-                    <p class="text-gray-600 leading-relaxed" data-en="${answerEn}" data-fr="${answerFr}">${answerEn}</p>
+                <div class="faq-answer hidden pt-4">
+                    <p class="text-base text-gray-600 leading-relaxed" data-en="${answerEn}" data-fr="${answerFr}">${answerEn}</p>
                 </div>
             </div>
         `;

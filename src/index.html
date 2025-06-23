@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BrébeufHx - Components Example</title>
+        <title>BrébeufHx 9.0</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script>
@@ -53,11 +53,12 @@
                     ❄️ Brébeuf<span id="hx" class="bg-gradient-to-r bg-clip-text text-transparent from-ice-blue-100 to-ice-blue-200">Hx</span>
                 </div>
                 <ul id="nav-menu" class="hidden md:flex space-x-8">
-                    <li><a href="#home" class="text-gray-200 font-medium hover:text-white transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
-                    <li><a href="#about" class="text-gray-200 font-medium hover:text-white transition-colors" data-en="About" data-fr="À propos">About</a></li>
-                    <li><a href="#schedule" class="text-gray-200 font-medium hover:text-white transition-colors" data-en="Schedule" data-fr="Horaire">Schedule</a></li>
-                    <li><a href="#register" class="text-gray-200 font-medium hover:text-white transition-colors" data-en="Register" data-fr="S'inscrire">Register</a></li>
-                    <li><a href="#faq" class="text-gray-200 font-medium hover:text-white transition-colors" data-en="FAQ" data-fr="FAQ">FAQ</a></li>
+                    <li><a href="#home" class="text-base text-gray-200 font-medium hover:text-white transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="#about" class="text-base text-gray-200 font-medium hover:text-white transition-colors" data-en="About" data-fr="À propos">About</a></li>
+                    <li><a href="#sponsors" class="text-base text-gray-200 font-medium hover:text-white transition-colors" data-en="Sponsors" data-fr="Partenaires">Sponsors</a></li>
+                    <li><a href="#register" class="text-base text-gray-200 font-medium hover:text-white transition-colors" data-en="Register" data-fr="S'inscrire">Register</a></li>
+                    <li><a href="#faq" class="text-base text-gray-200 font-medium hover:text-white transition-colors" data-en="FAQ" data-fr="FAQ">FAQ</a></li>
+                    <!-- Don't forget to update the footer! -->
                 </ul>
                 <button id="lang-btn" class="bg-white text-ice-blue-500 px-4 py-2 ml-8 rounded-full font-semibold text-sm transition-all" data-fr="🇺🇸" data-en="🇫🇷">🇺🇸</button>
                 <div id="hamburger" class="md:hidden flex flex-col cursor-pointer">
@@ -70,7 +71,7 @@
 
         <!-- Hero Section -->
         <section id="home" class="min-h-screen flex flex-col items-center justify-center relative bg-gradient-to-br from-ice-blue-400 via-ice-blue-500 to-ice-blue-700 overflow-hidden">
-            <div class="absolute w-full h-full opacity-75 bg-[url(./assets/IMG_3479.jpg)] bg-center bg-cover"></div>
+            <div class="absolute w-full h-full opacity-75 bg-[url(./assets/photos/IMG_3479.jpg)] bg-center bg-cover"></div>
             <!-- Snow Background -->
             <div id="snowflakes" class="absolute inset-0">
                 <div class="snowflake absolute text-white text-2xl opacity-0 animate-snowfall" style="left: 10%; animation-delay: 0s; animation-duration: 8s;">❄</div>
@@ -94,10 +95,8 @@
             </div>
 
             <div class="text-center text-white relative z-10 max-w-4xl px-5 py-6 my-auto">
-                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-                    <span class="drop-shadow-lg" data-en="Québec's Biggest" data-fr="Le plus grand">Québec's Biggest</span>
-                    <span class="bg-gradient-to-r from-white to-ice-blue-100 bg-clip-text text-transparent drop-shadow-lg" data-en="Pre-University Hackathon" data-fr="hackathon pré-universitaire">Pre-University Hackathon</span>
-                </h1>
+                <h1 class="text-7xl md:text-8xl font-extrabold leading-tight drop-shadow-lg" data-en="BrébeufHx 9.0" data-fr="BrébeufHx 9.0">BrébeufHx 9.0</h1>
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4 bg-gradient-to-r from-white to-ice-blue-100 bg-clip-text text-transparent drop-shadow-lg" data-en="pre-university hackathon" data-fr="hackathon pré-universitaire">pre-university hackathon</h2>
                 <p class="text-xl mb-8 opacity-90 drop-shadow-md" data-en="24 hours of coding, creating, and connecting. Build solutions that change the world." data-fr="24 heures de programmation, de création et de connexion. Construisez des solutions qui changent le monde.">
                     24 hours of coding, creating, and connecting. Build solutions that change the world.
                 </p>
@@ -118,7 +117,7 @@
                 </div>
                 <p class="text-white/80 text-sm mt-4 mx-auto" data-en="We'll notify you when registration opens and share exclusive updates!" data-fr="On te notifiera quand l'inscription ouvre et on te partagera des mises à jour exclusives!">We'll notify you when registration opens and share exclusive updates!</p>
             </div>
-            <div class="icicle absolute bottom-0 right-0 left-0 h-16 bg-white" style="clip-path: polygon(0 100%, 15% 60%, 30% 100%, 45% 40%, 60% 100%, 75% 50%, 90% 100%, 100% 30%, 100% 100%, 0 100%, 0 0)"></div>
+            <div class="icicle absolute bottom-0 right-0 left-0 h-16 bg-white" style="clip-path: polygon(0 100%, 0 90%, 15% 60%, 30% 75%, 45% 40%, 60% 83%, 75% 50%, 90% 70%, 100% 30%, 100% 100%, 0 100%)"></div>
         </section>
 
         <!-- About Section -->
@@ -158,21 +157,22 @@
         </section>
 
         <!-- Stats Section -->
-        <section class="py-20 bg-ice-blue-600 relative">
+        <section class="py-20 bg-ice-blue-400 relative">
             <div class="icicle absolute top-0 left-0 right-0 h-16 bg-white" style="clip-path: polygon(0 0, 10% 100%, 25% 20%, 40% 100%, 55% 30%, 70% 100%, 85% 40%, 100% 100%, 100% 0)"></div>
             <div class="max-w-6xl mx-auto px-5">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
-                    <stats-card class="animate-scroll" number="24" label-en="Hours" label-fr="Heures"></stats-card>
-                    <stats-card class="animate-scroll" number="100+" label-en="Participants" label-fr="Participants"></stats-card>
-                    <stats-card class="animate-scroll" number="1-4" label-en="Team Size" label-fr="Taille d'Équipe"></stats-card>
-                    <stats-card class="animate-scroll" number="∞" label-en="Possibilities" label-fr="Possibilités"></stats-card>
+                <h2 class="animate-scroll text-4xl text-center font-bold text-ice-blue-100 my-12" data-en="Last year, we had..." data-fr="L'année dernière, on avait...">Last year, we had...</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 m-4 text-center text-white">
+                    <stats-card class="animate-scroll" number="24" label-en="hours" label-fr="heures"></stats-card>
+                    <stats-card class="animate-scroll" number="180+" label-en="participants" label-fr="participants"></stats-card>
+                    <stats-card class="animate-scroll" number="18" label-en="projects submitted" label-fr="projets soumis"></stats-card>
+                    <stats-card class="animate-scroll" number="9" label-en="schools" label-fr="écoles"></stats-card>
                 </div>
             </div>
             <div class="icicle absolute bottom-0 left-0 right-0 h-16 bg-ice-blue-50" style="clip-path: polygon(0 100%, 20% 30%, 40% 100%, 60% 20%, 80% 100%, 100% 100%)"></div>
         </section>
 
         <!-- Sponsors Section -->
-        <section id="sponsors" class="py-24 bg-ice-blue-50 relative">
+        <section id="sponsors" class="py-20 bg-ice-blue-50 relative">
             <div class="max-w-6xl mx-auto px-5">
                 <div class="text-center mb-16">
                     <h2 class="animate-scroll text-4xl font-bold text-gray-800 mb-4" data-en="Our Sponsors" data-fr="Nos partenaires">Our Sponsors</h2>
@@ -200,7 +200,8 @@
                     </div>
                 </div>
             </div>
-            <div class="icicle absolute bottom-0 left-0 right-0 h-16 bg-white" style="clip-path: polygon(0 0, 20% 80%, 40% 20%, 60% 80%, 80% 20%, 100% 80%, 100% 100%, 0 100%)"></div>
+            <!-- Bring back with Schedule section -->
+            <!-- <div class="icicle absolute bottom-0 left-0 right-0 h-16 bg-white" style="clip-path: polygon(0 0, 20% 80%, 40% 20%, 60% 80%, 80% 20%, 100% 80%, 100% 100%, 0 100%)"></div> -->
         </section>
 
         <!-- Schedule Section -->
@@ -243,28 +244,29 @@
         </section> -->
 
         <!-- Register Section -->
-        <section id="register" class="py-24 bg-gradient-to-br from-ice-blue-400 via-ice-blue-500 to-ice-blue-700 text-white relative">
-            <div class="icicle absolute top-0 left-0 right-0 h-20 bg-white" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 60%, 60% 100%, 40% 40%, 20% 100%, 0 60%)"></div>
+        <section id="register" class="py-20 bg-gradient-to-br from-ice-blue-400 via-ice-blue-500 to-ice-blue-700 text-white relative">
+            <!-- Change bg back to bg-white with Schedule section -->
+            <div class="icicle absolute top-0 left-0 right-0 h-20 bg-ice-blue-50" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 60%, 60% 100%, 40% 40%, 20% 100%, 0 60%)"></div>
             <div class="max-w-6xl mx-auto px-5">
-                <h2 class="animate-scroll section-title text-4xl font-bold text-center mb-12" data-en="Ready to join? ❄️" data-fr="Prêt à participer ? ❄️">Ready to Join? ❄️</h2>
+                <h2 class="animate-scroll section-title text-4xl font-bold text-center my-16" data-en="Ready to join? ❄️" data-fr="Prêt à participer ? ❄️">Ready to Join? ❄️</h2>
                 <div class="register-content grid md:grid-cols-2 gap-12">
                     <div class="animate-scroll flex flex-col items-start justify-start p-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
                         <h3 class="text-2xl font-bold text-white mb-4" data-en="Who can participate?" data-fr="Qui peut participer ?">Who can participate?</h3>
                         <ul class="space-y-2 list-disc list-inside">
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="High school students (Secondary 3-5)" data-fr="Étudiants du secondaire (Secondaire 3-5)">High school students (Secondary 3-5)</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="CÉGEP students" data-fr="Étudiants du CÉGEP">CÉGEP students</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="All skill levels welcome!" data-fr="Tous les niveaux de compétence sont les bienvenus !">All skill levels welcome!</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="No coding experience required" data-fr="Aucune expérience en programmation requise">No coding experience required</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="High school students (Secondary 3-5)" data-fr="Étudiants du secondaire (Secondaire 3-5)">High school students (Secondary 3-5)</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="CÉGEP students" data-fr="Étudiants du CÉGEP">CÉGEP students</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="All skill levels welcome!" data-fr="Tous les niveaux de compétence sont les bienvenus !">All skill levels welcome!</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="No coding experience required" data-fr="Aucune expérience en programmation requise">No coding experience required</span></li>
                         </ul>
                     </div>
                     <div class="animate-scroll flex flex-col items-start justify-start p-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
                         <h3 class="text-2xl font-bold text-white mb-4" data-en="What you'll get:" data-fr="Ce que vous obtiendrez :">What you'll get:</h3>
                         <ul class="space-y-2 list-disc list-inside">
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="Free food & snacks" data-fr="Nourriture et collations gratuites">Free food & snacks</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="Workshops & mentorship" data-fr="Ateliers et mentorat">Workshops & mentorship</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="Amazing prizes" data-fr="Prix incroyables">Amazing prizes</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="Networking opportunities" data-fr="Opportunités de réseautage">Networking opportunities</span></li>
-                            <li class="text-ice-blue-300"><span class="text-ice-blue-100" data-en="Memories that last a lifetime" data-fr="Des souvenirs qui durent toute une vie">Memories that last a lifetime</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="Free food & snacks" data-fr="Nourriture et collations gratuites">Free food & snacks</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="Workshops & mentorship" data-fr="Ateliers et mentorat">Workshops & mentorship</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="Amazing prizes" data-fr="Prix incroyables">Amazing prizes</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="Networking opportunities" data-fr="Opportunités de réseautage">Networking opportunities</span></li>
+                            <li class="text-ice-blue-300"><span class="text-lg text-ice-blue-100" data-en="Memories that last a lifetime" data-fr="Des souvenirs qui durent toute une vie">Memories that last a lifetime</span></li>
                         </ul>
                     </div>
                 </div>
@@ -282,7 +284,7 @@
                         ❄️ Open Registration Form
                     </a> -->
                     <h3 class="text-2xl font-bold text-white mb-4" data-en="Stay Updated" data-fr="Restes à jour">Stay Updated</h3>
-                    <p class="text-ice-blue-100 mb-6" data-en="Get notified when registration opens and receive exclusive updates!" data-fr="Sois notifié quand l'inscription ouvre et reçois des mises à jour exclusives!">Get notified when registration opens and receive exclusive updates!</p>
+                    <p class="text-lg text-ice-blue-100 mb-6" data-en="Get notified when registration opens and receive exclusive updates!" data-fr="Sois notifié quand l'inscription ouvre et reçois des mises à jour exclusives!">Get notified when registration opens and receive exclusive updates!</p>
                     <form class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md" action="https://docs.google.com/forms/d/e/1FAIpQLSeiKzwMFyy_dV9_eAJRLj663ViiB0F08ny8sGnuDjfblZWHwg/formResponse" method="GET" target="_blank">
                         <!-- Update if we ever change the form -->
                         <input name="submit" value="Submit" hidden>
@@ -340,24 +342,24 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-12">
+        <footer class="bg-gray-900 text-white py-16">
             <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <h3 class="text-2xl font-bold mb-4 text-ice-blue-400">❄️ BrébeufHx</h3>
-                    <p class="text-gray-400" data-en="Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators." data-fr="Le plus grand hackathon pré-universitaire du Québec. Organisé avec ❤️ pour les futurs innovateurs du Québec.">Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators.</p>
+                    <p class="text-gray-400" data-en="Our 9th annual pre-university hackathon. Organized with ❤️ for Québec's future innovators." data-fr="Le 9e hackathon pré-universitaire annuel. Organisé avec ❤️ pour les futurs innovateurs du Québec.">The 9th annual pre-university hackathon. Organized with ❤️ for Québec's future innovators.</p>
                     <p class="text-gray-400 mt-2" data-en="Contact us at <a class=hover:underline href=mailto:team@brebeufhackathon.com>team@brebeufhackathon.com</a> for any questions or inquiries." data-fr="Contacte-nous à l'adresse <a class=hover:underline href=mailto:team@brebeufhackathon.com>team@brebeufhackathon.com</a> pour toute question.">Contact us at <a class="hover:underline" href="mailto:team@brebeufhackathon.com">team [at] brebeufhackathon [dot] com</a> for any questions or inquiries.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4> 
+                    <h4 class="text-xl font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4> 
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="About" data-fr="À propos">About</a></li>
-                        <li><a href="#schedule" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Schedule" data-fr="Horaire">Schedule</a></li>
+                        <li><a href="#sponsors" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Sponsors" data-fr="Partenaires">Sponsors</a></li>
                         <li><a href="#register" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Register" data-fr="S'inscrire">Register</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Connect" data-fr="Se connecter">Connect</h4>
+                    <h4 class="text-xl font-semibold mb-4 text-ice-blue-400" data-en="Connect" data-fr="Se connecter">Connect</h4>
                     <div class="flex space-x-4">
                         <a href="https://www.instagram.com/brebeufhx" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/BrebeufHx" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-ice-blue-500 transform hover:-translate-y-1 transition-all"><i class="fab fa-facebook"></i></a>
