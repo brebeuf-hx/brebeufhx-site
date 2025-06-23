@@ -1,3 +1,5 @@
+import { BaseComponent } from './BaseComponent.js';
+
 class StatsCard extends BaseComponent {
     constructor() {
         super();
@@ -13,7 +15,7 @@ class StatsCard extends BaseComponent {
         const labelFr = this.getAttribute('label-fr') || 'Stat';
 
         this.innerHTML = `
-            <div class="animate-scroll text-center bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+            <div class="text-center bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
                 <div class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md">${number}</div>
                 <div class="text-lg text-ice-blue-100 font-medium" data-en="${labelEn}" data-fr="${labelFr}">${labelEn}</div>
             </div>

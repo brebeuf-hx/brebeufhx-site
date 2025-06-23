@@ -1,3 +1,5 @@
+import { BaseComponent } from './BaseComponent.js';
+
 class FeatureCard extends BaseComponent {
     constructor() {
         super();
