@@ -46,7 +46,7 @@
         </script>
     </head>
     <body class="bg-gray-50">
-        <!-- Navbar Component -->
+        <!-- Navbar -->
         <nav id="navbar" class="fixed top-0 w-full z-50 py-4 transition-all duration-300">
             <div class="max-w-6xl mx-auto px-5 flex justify-between items-center">
                 <div id="logo" class="text-2xl font-extrabold text-white">
@@ -68,8 +68,9 @@
             </div>
         </nav>
 
-        <!-- Hero Section Component -->
+        <!-- Hero Section -->
         <section id="home" class="min-h-screen flex flex-col items-center justify-center relative bg-gradient-to-br from-ice-blue-400 via-ice-blue-500 to-ice-blue-700 overflow-hidden">
+            <div class="absolute w-full h-full opacity-75 bg-[url(./assets/IMG_3479.jpg)] bg-center bg-cover"></div>
             <!-- Snow Background -->
             <div id="snowflakes" class="absolute inset-0">
                 <div class="snowflake absolute text-white text-2xl opacity-0 animate-snowfall" style="left: 10%; animation-delay: 0s; animation-duration: 8s;">❄</div>
@@ -103,8 +104,6 @@
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <!-- <a href="#register" class="flex items-center justify-center bg-gradient-to-r from-white to-ice-blue-100 text-ice-blue-700 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all" data-en="❄️ Register" data-fr="❄️ S'inscrire">❄️ Register</a>
                     <a href="#about" class="flex items-center justify-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white hover:text-ice-blue-700 transition-all" data-en="Learn More" data-fr="En savoir plus">Learn More</a> -->
-
-                    <!-- Email signup for registration notifications -->
                     <form class="flex flex-col sm:flex-row gap-4 justify-center items-center" action="https://docs.google.com/forms/d/e/1FAIpQLSeiKzwMFyy_dV9_eAJRLj663ViiB0F08ny8sGnuDjfblZWHwg/formResponse" method="GET" target="_blank">
                         <!-- Update if we ever change the form -->
                         <input name="submit" value="Submit" hidden>
@@ -129,7 +128,6 @@
                     <h2 class="animate-scroll text-4xl font-bold text-gray-800 mb-4" data-en="About BrébeufHx" data-fr="À propos de BrébeufHx">About BrébeufHx</h2>
                     <p class="animate-scroll text-xl text-gray-600 max-w-3xl mx-auto" data-en="A 24-hour hackathon for Quebec high school and CÉGEP students" data-fr="Un hackathon de 24 heures pour les étudiants du secondaire et du CÉGEP du Québec">A 24-hour hackathon for Quebec high school and CÉGEP students</p>
                 </div>
-                
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <feature-card
                         class="animate-scroll"
@@ -173,18 +171,50 @@
             <div class="icicle absolute bottom-0 left-0 right-0 h-16 bg-ice-blue-50" style="clip-path: polygon(0 100%, 20% 30%, 40% 100%, 60% 20%, 80% 100%, 100% 100%)"></div>
         </section>
 
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="py-24 bg-ice-blue-50 relative">
+            <div class="max-w-6xl mx-auto px-5">
+                <div class="text-center mb-16">
+                    <h2 class="animate-scroll text-4xl font-bold text-gray-800 mb-4" data-en="Our Sponsors" data-fr="Nos partenaires">Our Sponsors</h2>
+                    <p class="animate-scroll text-xl text-gray-600 max-w-3xl mx-auto" data-en="BrébeufHx is proud to be supported by these amazing organizations." data-fr="BrébeufHx est fier d'être soutenu par ces organisations incroyables.">BrébeufHx is proud to be supported by these amazing organizations.</p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="animate-scroll grid grid-cols-2 md:grid-cols-3 gap-8 items-center">
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-32"><span class="text-gray-400">Sponsor Logo</span></div>
+                    </div>
+                    <div class="animate-scroll grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-28"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-28"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-28"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-28"><span class="text-gray-400">Sponsor Logo</span></div>
+                    </div>
+                    <div class="animate-scroll grid grid-cols-3 md:grid-cols-5 gap-8 items-center">
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-24"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-24"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-24"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-24"><span class="text-gray-400">Sponsor Logo</span></div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex justify-center items-center h-24"><span class="text-gray-400">Sponsor Logo</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="icicle absolute bottom-0 left-0 right-0 h-16 bg-white" style="clip-path: polygon(0 0, 20% 80%, 40% 20%, 60% 80%, 80% 20%, 100% 80%, 100% 100%, 0 100%)"></div>
+        </section>
+
         <!-- Schedule Section -->
-        <section id="schedule" class="py-24 bg-ice-blue-50">
+        <!-- <section id="schedule" class="py-24 bg-white">
             <div class="max-w-4xl mx-auto px-5">
                 <div class="text-center mb-16">
                     <h2 class="animate-scroll text-4xl font-bold text-gray-800 mb-4" data-en="Event Schedule ⏰" data-fr="Horaire de l'événement ⏰">Event Schedule</h2>
-                    <!-- <p class="text-xl text-gray-600" data-en="24 hours of coding, learning, and fun" data-fr="24 heures de programmation, d'apprentissage et de plaisir">24 hours of coding, learning, and fun</p> -->
+                    <! -- <p class="text-xl text-gray-600" data-en="24 hours of coding, learning, and fun" data-fr="24 heures de programmation, d'apprentissage et de plaisir">24 hours of coding, learning, and fun</p> -- >
                 </div>
                 <div class="relative">
-                    <!-- Timeline line -->
+                    <! -- Timeline line -- >
                     <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-ice-blue-400 to-ice-blue-600 transform -translate-x-1/2"></div>
                     
-                    <!-- Timeline items -->
+                    <! -- Timeline items -- >
                     <div class="animate-scroll space-y-8">
                         <timeline-item 
                             title-en="❄️ Day 1 - Opening" 
@@ -210,11 +240,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Register Section -->
         <section id="register" class="py-24 bg-gradient-to-br from-ice-blue-400 via-ice-blue-500 to-ice-blue-700 text-white relative">
-            <div class="icicle absolute top-0 left-0 right-0 h-20 bg-ice-blue-50" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 60%, 60% 100%, 40% 40%, 20% 100%, 0 60%)"></div>
+            <div class="icicle absolute top-0 left-0 right-0 h-20 bg-white" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 60%, 60% 100%, 40% 40%, 20% 100%, 0 60%)"></div>
             <div class="max-w-6xl mx-auto px-5">
                 <h2 class="animate-scroll section-title text-4xl font-bold text-center mb-12" data-en="Ready to join? ❄️" data-fr="Prêt à participer ? ❄️">Ready to Join? ❄️</h2>
                 <div class="register-content grid md:grid-cols-2 gap-12">
@@ -240,9 +270,9 @@
                 </div>
                 <div class="animate-scroll flex items-center justify-center flex-col text-center register-form p-8 mt-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
                     <!-- <h3 class="text-2xl font-semibold mb-4 text-ice-blue-100" data-en="Register Now" data-fr="S'inscrire maintenant">Register Now</h3>
-                    <p class="text-ice-blue-100 mb-6" data-en="Fill out our Google Form to secure your spot!" data-fr="Remplissez notre formulaire Google pour réserver votre place!">Fill out our Google Form to secure your spot!</p> -->
-                    <!-- Form link button -->
-                    <!-- <a 
+                    <p class="text-ice-blue-100 mb-6" data-en="Fill out our Google Form to secure your spot!" data-fr="Remplissez notre formulaire Google pour réserver votre place!">Fill out our Google Form to secure your spot!</p> -- >
+                    <! -- Form link button -- >
+                    <a 
                         href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" 
                         target="_blank" 
                         rel="noopener noreferrer"
@@ -276,7 +306,6 @@
                     <h2 class="animate-scroll text-4xl font-bold text-gray-800 mb-4" data-en="Frequently Asked Questions" data-fr="Foire aux questions">Frequently Asked Questions</h2>
                     <p class="animate-scroll text-xl text-gray-600" data-en="Everything you need to know about BrébeufHx" data-fr="Tout ce que tu as besoin de savoir à propos de BrébeufHx">Everything you need to know about BrébeufHx</p>
                 </div>
-                
                 <div class="flex flex-col space-y-4">
                     <faq-item
                         class="animate-scroll"
@@ -285,7 +314,6 @@
                         answer-en="BrébeufHx is open to all Quebec high school and CÉGEP students. No prior coding experience required!"
                         answer-fr="BrébeufHx est ouvert à tous les étudiants du secondaire et du CÉGEP du Québec. Aucune expérience en programmation requise!">
                     </faq-item>
-                    
                     <faq-item
                         class="animate-scroll"
                         question-en="What should I bring?" 
@@ -293,7 +321,6 @@
                         answer-en="Bring your laptop, charger, and enthusiasm! We'll provide food, drinks, and a great environment."
                         answer-fr="Apporte ton ordinateur portable, ton chargeur et ton enthousiasme! Nous fournirons la nourriture, les boissons et un excellent environnement.">
                     </faq-item>
-                    
                     <faq-item
                         class="animate-scroll"
                         question-en="How do teams work?" 
@@ -301,7 +328,6 @@
                         answer-en="You can work alone or in teams of up to 4 people. We'll help you find teammates if needed!"
                         answer-fr="Tu peux travailler seul ou en équipes de jusqu'à 4 personnes. Nous t'aiderons à trouver des coéquipiers si nécessaire!">
                     </faq-item>
-                    
                     <faq-item
                         class="animate-scroll"
                         question-en="What are the prizes?" 
@@ -318,10 +344,11 @@
             <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <h3 class="text-2xl font-bold mb-4 text-ice-blue-400">❄️ BrébeufHx</h3>
-                    <p class="text-gray-400" data-en="Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators. Contact us at team [at] brebeufhackathon [dot] com for any questions or inquiries." data-fr="Le plus grand hackathon pré-universitaire du Québec. Organisé avec ❤️ pour les futurs innovateurs du Québec. Contacte-nous à l'adresse team [arobas] brebeufhackathon [point] com pour toute question.">Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators. Contact us at team [at] brebeufhackathon [dot] com for any questions or inquiries.</p>
+                    <p class="text-gray-400" data-en="Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators." data-fr="Le plus grand hackathon pré-universitaire du Québec. Organisé avec ❤️ pour les futurs innovateurs du Québec.">Québec's biggest pre-university hackathon. Organized with ❤️ for Québec's future innovators.</p>
+                    <p class="text-gray-400 mt-2" data-en="Contact us at <a class=hover:underline href=mailto:team@brebeufhackathon.com>team@brebeufhackathon.com</a> for any questions or inquiries." data-fr="Contacte-nous à l'adresse <a class=hover:underline href=mailto:team@brebeufhackathon.com>team@brebeufhackathon.com</a> pour toute question.">Contact us at <a class="hover:underline" href="mailto:team@brebeufhackathon.com">team [at] brebeufhackathon [dot] com</a> for any questions or inquiries.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-ice-blue-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4> 
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="Home" data-fr="Accueil">Home</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-ice-blue-400 transition-colors" data-en="About" data-fr="À propos">About</a></li>
@@ -346,4 +373,4 @@
         <script src="components/StatsCard.js" type="module"></script>
         <script src="components/TimelineItem.js" type="module"></script>
     </body>
-</html> 
+</html>
