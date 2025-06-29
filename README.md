@@ -1,8 +1,8 @@
-# ❄️ BrébeufHx - Site Web Officiel
+# BrébeufHx - Site Web Officiel
 
 ## 📖 À propos
 
-**BrébeufHx** est le site web officiel du plus grand hackathon pré-universitaire du Québec. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
+Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire du Québec. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
 
 ### 🛠️ Technologies utilisées
 - **Tailwind CSS** pour le styling
@@ -39,59 +39,19 @@
 
 4. **Ouvrir dans le navigateur**: http://localhost:8000
 
-## 📁 Structure du Projet
-
-```
-brebeufhx-site/
-├── src/
-│   ├── index.html          # Page principale
-│   ├── script.js           # Logique principale
-│   └── components/         # Composants Web pour les parties du site qui sont plus complexes et ceux qui se font réutilisés
-├── README.md
-└── .gitignore
-```
-
-## 🎨 Personnalisation
-
-### Couleurs
-Les couleurs sont définies dans la configuration Tailwind :
-```javascript
-'ice-blue': {
-    50: '#f0f9ff',
-    100: '#e0f2fe',
-    // ... autres nuances
-}
-```
-
-### Animations
-Animations personnalisées disponibles :
-- `snowfall` : Animation de neige
-- `fade-in-up` : Apparition par le bas
-- `shimmer` : Effet de scintillement
-
-### Polygones de transition
-Les formes de stalactites sont créées avec `clip-path` :
-```css
-clip-path: polygon(0 100%, 15% 60%, 30% 100%, ...)
-```
-
-## 🤝 Contribuer
+## Contribuer
 
 ### Comment?
 1. **Fork** le projet
 2. **Créer** une branche feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** vos changements (`git commit -m 'Add AmazingFeature'`)
+3. **Commit** vos changements (`git commit -m "ajouter quelquechose d'incroyable"`)
 4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
 5. **Ouvrir** une Pull Request
 
-### Standards de Code
-- **ESLint** pour la qualité du code JavaScript
-- **Prettier** pour le formatage
-- **Conventions** de nommage en français
+## Licence
 
-## 📝 Licence
+Ce projet est sous la licence **MIT**. Voir le fichier `LICENSE` pour plus de détails.
 
-Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de détails.
+## Questions?
 
-## 📞 Contact
 Contactez-nous à l'adresse suivante : site@brebeufhackathon.com
