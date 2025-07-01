@@ -266,11 +266,19 @@
             </div>
             <div class="absolute right-0 left-0 -bottom-1 z-10 h-20 bg-white icicle" style="clip-path: polygon(0 100%, 20% 40%, 40% 100%, 60% 30%, 80% 100%, 100% 100%)"></div>
             <script>
+                const MAX_EXCLAMATIONS = 25;
+                const stayUpdatedContainer = document.getElementById('stay-updated-container');
+
                 let firstRun = true;
-                document.getElementById('stay-updated-container').addEventListener('mouseenter', () => {
+                let total = 0;
+
+                const stayUpdated = () => {
+                    if (total > MAX_EXCLAMATIONS) {
+                        stayUpdatedContainer.removeEventListener('mouseenter', stayUpdated);
+                        return;
+                    }
                     const heading = document.getElementById('stay-updated');
                     const exclamation = document.createElement('span');
-
                     exclamation.setAttribute('class', 'text-2xl text-red-500 animate-blink');
                     if (firstRun) {
                         exclamation.classList.add('ml-1');
@@ -278,7 +286,10 @@
                     }
                     exclamation.textContent = '!';
                     heading.appendChild(exclamation);
-                });
+                    total += 1;
+                }
+
+                stayUpdatedContainer.addEventListener('mouseenter', stayUpdated);
             </script>
         </section>
 
