@@ -17,11 +17,11 @@ class FeatureCard extends BaseComponent {
         const descFr = this.getAttribute('description-fr') || 'Description';
 
         this.innerHTML = /*html*/`
-            <div class="overflow-hidden relative p-8 bg-gradient-to-br from-white rounded-3xl border shadow-xl backdrop-blur-sm transition-all duration-500 transform to-ice-blue-50 hover:shadow-2xl hover:-translate-y-5 border-ice-blue-100/50 group">
-                <div class="mb-6 text-4xl transition-all duration-300 transform origin-left group-hover:scale-125">${icon}</div>
-                <h3 class="mb-4 text-2xl font-bold transition-colors duration-300 text-ice-blue-800 group-hover:text-ice-blue-700" data-en="${titleEn}" data-fr="${titleFr}">${titleEn}</h3>
-                <p class="text-base leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-700" data-en="${descEn}" data-fr="${descFr}">${descEn}</p>
-            </div>
+        <div class="overflow-hidden relative p-8 bg-white rounded-3xl border backdrop-blur-sm transition-all duration-500 transform hover:shadow-xl hover:-translate-y-5 border-ice-blue-100/50 group">
+            <div class="mb-6 text-4xl transition-all duration-300 transform origin-left group-hover:scale-125">${icon}</div>
+            <h3 class="mb-4 text-2xl font-bold transition-colors duration-300 text-ice-blue-800 group-hover:text-ice-blue-700" data-en="${titleEn}" data-fr="${titleFr}">${titleEn}</h3>
+            <p class="text-base leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-700" data-en="${descEn}" data-fr="${descFr}">${descEn}</p>
+        </div>
         `;
     }
 }
