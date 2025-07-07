@@ -1,0 +1,32 @@
+{
+  "name": "brebeufhx-site",
+  "version": "1.0.0",
+  "description": "Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire du Québec. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.",
+  "homepage": "https://github.com/adntaha/brebeufhx-site#readme",
+  "bugs": {
+    "url": "https://github.com/adntaha/brebeufhx-site/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adntaha/brebeufhx-site.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Adnan-Aidan Taha",
+    "email": "adnanaidantaha@gmail.com"
+  },
+  "type": "module",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx tailwindcss -i ./input.css -o ./src/tailwind.css",
+    "watch-css": "npx tailwindcss -i ./input.css -o ./src/tailwind.css --watch",
+    "dev": "npx serve src"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
