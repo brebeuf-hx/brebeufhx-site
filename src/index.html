@@ -166,27 +166,27 @@
                     <div class="grid grid-cols-2 place-items-center gap-8 items-center animate-scroll md:grid-cols-2 overflow-hidden md:start">
                         <!-- update md:grid-cols-2 to match amount of sponsors in this section -->
                         <div class="flex justify-center items-center w-40 h-40 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain h-40 w-auto" src="assets/sponsors/pouletrouge.png" alt="Poulet Rouge" loading="lazy" />
+                            <img class="object-contain h-40 w-auto" src="assets/sponsors/resized/pouletrouge-1x.webp" srcset="assets/sponsors/resized/pouletrouge-1x.webp 1x, assets/sponsors/resized/pouletrouge-2x.webp 2x" width="101" height="160" alt="Poulet Rouge" loading="lazy" />
                         </div>
                         <div class="flex justify-center items-center w-40 h-40 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain w-36 h-auto" src="assets/sponsors/dominos.png" alt="Domino's Pizza" loading="lazy" />
+                            <img class="object-contain w-36 h-auto" src="assets/sponsors/resized/dominos-1x.webp" srcset="assets/sponsors/resized/dominos-1x.webp 1x, assets/sponsors/resized/dominos-2x.webp 2x" width="144" height="145" alt="Domino's Pizza" loading="lazy" />
                         </div>
                     </div>
                     <div class="grid grid-cols-3 place-items-center gap-4 md:gap-8 items-center animate-scroll md:grid-cols-5 overflow-hidden">
                         <div class="flex justify-center items-center w-28 h-28 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain w-24 h-auto" src="assets/sponsors/nord.png" alt="NordVPN" loading="lazy" />
+                            <img class="object-contain w-24 h-auto" src="assets/sponsors/resized/nord-1x.webp" srcset="assets/sponsors/resized/nord-1x.webp 1x, assets/sponsors/resized/nord-2x.webp 2x" width="96" height="79" alt="NordVPN" loading="lazy" />
                         </div>
                         <div class="flex justify-center items-center w-28 h-28 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain w-24 h-auto" src="assets/sponsors/nordsec.png" alt="Nord Security" loading="lazy" />
+                            <img class="object-contain w-24 h-auto" src="assets/sponsors/resized/nordsec-1x.webp" srcset="assets/sponsors/resized/nordsec-1x.webp 1x, assets/sponsors/resized/nordsec-2x.webp 2x" width="96" height="96" alt="Nord Security" loading="lazy" />
                         </div>
                         <div class="flex justify-center items-center w-28 h-28 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain w-24 h-auto" src="assets/sponsors/nordpass.png" alt="NordPass" loading="lazy" />
+                            <img class="object-contain w-24 h-auto" src="assets/sponsors/resized/nordpass-1x.webp" srcset="assets/sponsors/resized/nordpass-1x.webp 1x, assets/sponsors/resized/nordpass-2x.webp 2x" width="96" height="87" alt="NordPass" loading="lazy" />
                         </div>
                         <div class="flex justify-center items-center w-28 h-28 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain w-24 h-auto" src="assets/sponsors/incogni black.png" alt="incogni" loading="lazy" />
+                            <img class="object-contain w-24 h-auto" src="assets/sponsors/resized/incogni_black-1x.webp" srcset="assets/sponsors/resized/incogni_black-1x.webp 1x, assets/sponsors/resized/incogni_black-2x.webp 2x" width="96" height="32" alt="incogni" loading="lazy" />
                         </div>
                         <div class="flex justify-center items-center w-28 h-28 shadow-md mb-2 overflow-hidden bg-ice-blue-100 rounded-2xl">
-                            <img class="object-contain w-24 h-auto" src="assets/sponsors/wolfram.webp" alt="Wolfram Alpha" loading="lazy" />
+                            <img class="object-contain w-24 h-auto" src="assets/sponsors/resized/wolfram-1x.webp" srcset="assets/sponsors/resized/wolfram-1x.webp 1x, assets/sponsors/resized/wolfram-2x.webp 2x" width="96" height="75" alt="Wolfram Alpha" loading="lazy" />
                         </div>
                     </div>
                     <div class="mx-auto flex flex-col justify-left items-center">
@@ -407,10 +407,15 @@
                 </div>
             </div>
         </footer>
-        <script src="script.js" type="module" defer></script>
-        <script src="components/FAQItem.js" type="module"></script>
-        <script src="components/FeatureCard.js" type="module"></script>
-        <script src="components/StatsCard.js" type="module"></script>
-        <script src="components/TimelineItem.js" type="module"></script>
+        <script src="lib/animateOnScroll.js" type="module" />
+        <script src="lib/mobileNavMenu.js" type="module" />
+        <script src="lib/navbar.js" type="module" />
+        <script src="lib/smoothScrolling.js" type="module" />
+        <script src="lib/snowflakes.js" type="module" defer />
+        <script src="lib/i18n.js" type="module" defer />
+        <script src="components/FAQItem.js" type="module" defer />
+        <script src="components/FeatureCard.js" type="module" />
+        <script src="components/StatsCard.js" type="module" defer />
+        <script src="components/TimelineItem.js" type="module" defer />
     </body>
 </html>
