@@ -79,15 +79,15 @@
                 <div class="flex flex-col gap-4 justify-center sm:flex-row">
                     <!-- <a href="#register" class="flex justify-center items-center px-8 py-3 text-lg font-semibold bg-gradient-to-r from-white rounded-full shadow-lg transition-all transform to-ice-blue-100 text-ice-blue-700 hover:shadow-xl hover:-translate-y-1" data-en="❄️ Register" data-fr="❄️ S'inscrire">❄️ Register</a>
                     <a href="#about" class="flex justify-center items-center px-8 py-3 text-lg font-semibold text-white bg-transparent rounded-full border-2 border-white transition-all hover:bg-white hover:text-ice-blue-700" data-en="Learn More" data-fr="En savoir plus">Learn More</a> -->
-                    <form class="flex flex-col gap-4 justify-center items-center sm:flex-row" action="https://docs.google.com/forms/d/e/1FAIpQLSeiKzwMFyy_dV9_eAJRLj663ViiB0F08ny8sGnuDjfblZWHwg/formResponse" method="GET" target="_blank">
+                    <form class="flex flex-col gap-4 justify-center items-center sm:flex-row" action="https://docs.google.com/forms/d/e/1FAIpQLSeiKzwMFyy_dV9_eAJRLj663ViiB0F08ny8sGnuDjfblZWHwg/formResponse" method="GET" target="_blank" onsubmit="return resetAfterSubmit(event);">
                         <!-- Update if we ever change the form -->
-                        <input name="submit" value="Submit" hidden>
-                        <input name="usp" value="pp_url" hidden>
-                        <input name="entry.1548815878" type="email" placeholder="Enter your email" data-en-placeholder="Enter your email" data-fr-placeholder="Ton courriel" class="px-6 py-3 text-lg text-white rounded-full border-2 border-white backdrop-blur-sm transition-all bg-white/10 placeholder-white/70 focus:outline-none focus:border-ice-blue-200">
-                        <input name="entry.1287066897" value="" hidden> <!-- First name -->
-                        <input name="entry.854837853" value="English" hidden>
-                        <input name="entry.1307065638" value="__other_option__" hidden>
-                        <input name="entry.1307065638.other_option_response" value="frontpage hero: brebeufhackathon.com newsletter field" hidden>
+                        <input type="hidden" name="submit" value="Submit">
+                        <input type="hidden" name="usp" value="pp_url">
+                        <input type="email"  name="entry.1548815878" placeholder="Enter your email" data-en-placeholder="Enter your email" data-fr-placeholder="Ton courriel" class="px-6 py-3 text-lg text-white rounded-full border-2 border-white backdrop-blur-sm transition-all bg-white/10 placeholder-white/70 focus:outline-none focus:border-ice-blue-200">
+                        <input type="hidden" name="entry.1287066897" value=""> <!-- First name -->
+                        <input type="hidden" name="entry.854837853" value="English">
+                        <input type="hidden" name="entry.1307065638" value="__other_option__">
+                        <input type="hidden" name="entry.1307065638.other_option_response" value="frontpage hero: brebeufhackathon.com newsletter field">
                         <button type="submit" class="flex justify-center items-center px-8 py-3 text-lg font-semibold bg-gradient-to-r from-white rounded-full shadow-lg transition-all transform to-ice-blue-100 text-ice-blue-700 hover:shadow-xl hover:-translate-y-1" data-en="❄️ Get Notified" data-fr="❄️ M'abonner">❄️ Get Notified</button>
                     </form>
                 </div>
@@ -281,15 +281,15 @@
                     </a> -->
                     <h3 class="mb-4 text-2xl font-bold text-white" data-en="Stay Updated" data-fr="Reste à jour" id="stay-updated">Stay Updated</h3>
                     <p class="mb-6 text-lg text-ice-blue-100" data-en="Get notified when registration opens and receive exclusive updates!" data-fr="Sois avisé de l'ouverture des inscriptions et reçois des mises à jour exclusives!">Get notified when registration opens and receive exclusive updates!</p>
-                    <form class="flex flex-col gap-4 justify-center items-center w-full max-w-md sm:flex-row" action="https://docs.google.com/forms/d/e/1FAIpQLSeiKzwMFyy_dV9_eAJRLj663ViiB0F08ny8sGnuDjfblZWHwg/formResponse" method="GET" target="_blank">
+                    <form class="flex flex-col gap-4 justify-center items-center w-full max-w-md sm:flex-row" action="https://docs.google.com/forms/d/e/1FAIpQLSeiKzwMFyy_dV9_eAJRLj663ViiB0F08ny8sGnuDjfblZWHwg/formResponse" method="GET" target="_blank" onsubmit="return resetAfterSubmit(event);">
                         <!-- Update if we ever change the form -->
-                        <input name="submit" value="Submit" hidden>
-                        <input name="usp" value="pp_url" hidden>
-                        <input name="entry.1548815878" type="email" placeholder="Enter your email" data-en-placeholder="Enter your email" data-fr-placeholder="Ton courriel" class="flex-1 px-6 py-3 text-lg text-white rounded-full border-2 border-white backdrop-blur-sm transition-all bg-white/10 placeholder-white/70 focus:outline-none focus:border-ice-blue-200">
-                        <input name="entry.1287066897" value="" hidden> <!-- First name -->
-                        <input name="entry.854837853" value="English" hidden>
-                        <input name="entry.1307065638" value="__other_option__" hidden>
-                        <input name="entry.1307065638.other_option_response" value="register section: brebeufhackathon.com newsletter field" hidden>
+                        <input type="hidden" name="submit" value="Submit">
+                        <input type="hidden" name="usp" value="pp_url">
+                        <input type="email"  name="entry.1548815878" placeholder="Enter your email" data-en-placeholder="Enter your email" data-fr-placeholder="Ton courriel" class="flex-1 px-6 py-3 text-lg text-white rounded-full border-2 border-white backdrop-blur-sm transition-all bg-white/10 placeholder-white/70 focus:outline-none focus:border-ice-blue-200">
+                        <input type="hidden" name="entry.1287066897" value=""> <!-- First name -->
+                        <input type="hidden" name="entry.854837853" value="English">
+                        <input type="hidden" name="entry.1307065638" value="__other_option__">
+                        <input type="hidden" name="entry.1307065638.other_option_response" value="register section: brebeufhackathon.com newsletter field">
                         <button type="submit" class="flex justify-center items-center px-8 py-3 text-lg font-semibold whitespace-nowrap bg-gradient-to-r from-white rounded-full shadow-lg transition-all transform to-ice-blue-100 text-ice-blue-700 hover:shadow-xl hover:-translate-y-1" data-en="❄️ Subscribe" data-fr="❄️ M'abonner">❄️ Subscribe</button>
                     </form>
                 </div>
@@ -408,6 +408,12 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function resetAfterSubmit(e) {
+                e.target.reset();
+                return true;
+            }
+        </script>
         <script src="lib/mobileNavMenu.js" type="module"></script>
         <script src="lib/navbar.js" type="module" ></script>
         <script src="lib/smoothScrolling.js" type="module"></script>
