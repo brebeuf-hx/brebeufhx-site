@@ -13,7 +13,7 @@ export function updateTextLanguage(element=document.body) {
     // Update all elements with data-en and data-fr attributes that are not inside components
     element.querySelectorAll(`${selectorPrefix} [data-en][data-fr]`).forEach((element) => {
         const text = element.getAttribute(`data-${language}`);
-        if (text) {
+        if (text !== element.innerHTML) {
             element.innerHTML = text;
         }
     });
@@ -21,15 +21,7 @@ export function updateTextLanguage(element=document.body) {
     // Update placeholders for input elements
     element.querySelectorAll(`${selectorPrefix} [data-en-placeholder][data-fr-placeholder]`).forEach((element) => {
         const placeholder = element.getAttribute(`data-${language}-placeholder`);
-        if (placeholder) {
-            element.placeholder = placeholder;
-        }
-    });
-    
-    // Update "value" element for forms
-    element.querySelectorAll(`${selectorPrefix} [data-en-value][data-fr-value]`).forEach((element) => {
-        const placeholder = element.getAttribute(`data-${language}-value`);
-        if (placeholder) {
+        if (placeholder !== element.innerHTML) {
             element.placeholder = placeholder;
         }
     });
@@ -37,7 +29,8 @@ export function updateTextLanguage(element=document.body) {
     if (element === document.body) {
         // Update newsletter language preference
         // It doesn't exist in the components lol
-        element.querySelector(`${selectorPrefix} [name="entry.854837853"]`).value = language === 'en' ? 'English' : 'Français';
+        const langElement = element.querySelector(`${selectorPrefix} [name="entry.854837853"]`);
+        langElement.value = language === 'en' ? 'English' : 'Français';
     }
 }
 
