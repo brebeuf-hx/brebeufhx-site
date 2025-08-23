@@ -6,6 +6,7 @@ export function updateTextLanguage(element=document.body) {
 
     let selectorPrefix = '';
     if (element === document.body) {
+        // custom prefix to exclude custom components
         selectorPrefix = customComponents.map(component => `:not(${component})`).join('');
     }
 
@@ -20,6 +21,14 @@ export function updateTextLanguage(element=document.body) {
     // Update placeholders for input elements
     element.querySelectorAll(`${selectorPrefix} [data-en-placeholder][data-fr-placeholder]`).forEach((element) => {
         const placeholder = element.getAttribute(`data-${language}-placeholder`);
+        if (placeholder) {
+            element.placeholder = placeholder;
+        }
+    });
+    
+    // Update "value" element for forms
+    element.querySelectorAll(`${selectorPrefix} [data-en-value][data-fr-value]`).forEach((element) => {
+        const placeholder = element.getAttribute(`data-${language}-value`);
         if (placeholder) {
             element.placeholder = placeholder;
         }
