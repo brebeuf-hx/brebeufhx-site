@@ -37,6 +37,7 @@ export function updateTextLanguage(element=document.body) {
 export function switchLanguage() {
     // Switch language from French to English and vice versa
     document.documentElement.lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+    window.lang = document.documentElement.lang;
 
     // Update button text
     const langBtn = document.querySelector('#lang-btn');
