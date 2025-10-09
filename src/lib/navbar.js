@@ -16,7 +16,6 @@ let navbarBackgroundWasRemoved = true;
 
 export function addNavbarBackground(mobileMenu) {
     if (navbarBackgroundWasAdded) {
-        console.log('already there, quitting')
         return;
     }
     navbarBackgroundWasAdded = true;
@@ -73,7 +72,6 @@ export function removeNavbarBackground() {
 // Navbar background //
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        console.log('scrollingnggg')
         addNavbarBackground();
     } else if (!hamburgerIsOpen) {
         removeNavbarBackground();
