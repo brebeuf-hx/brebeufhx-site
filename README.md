@@ -1,18 +1,18 @@
-# BrébeufHx - Site Web Officiel
+# BrébeufHx - Site web
 
-## 📖 À propos
+## À propos
 
-Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire du Québec. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
+Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire bilingue du Canada. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
 
-### 🛠️ Technologies utilisées
-- **Tailwind CSS** pour le styling
-- **JavaScript ES6+** pour l'interactivité
+### Technologies utilisées / le stack technique
+- **CSS** et **Tailwind CSS** pour le styling
+- **JavaScript** pour l'interactivité
 - **HTML** et **Web Components** pour la structure
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
-- **Node.js** (version 14 ou supérieure)
+- **Node.js** (version 18 ou supérieure)
 - **Navigateur moderne** (Chrome, Firefox, Safari, Edge)
 
 ### Étapes d'installation
@@ -54,4 +54,4 @@ Ce projet est sous la licence **MIT**. Voir le fichier `LICENSE` pour plus de d�
 
 ## Questions?
 
-Contactez-nous à l'adresse suivante : site@brebeufhackathon.com
+Contactez-nous à l'adresse suivante : team@brebeufhackathon.com
