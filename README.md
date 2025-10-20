@@ -4,7 +4,7 @@
 
 Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire bilingue du Canada. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
 
-### Technologies utilisées / le "stack"
+### Technologies utilisées / le stack technique
 - **CSS** et **Tailwind CSS** pour le styling
 - **JavaScript** pour l'interactivité
 - **HTML** et **Web Components** pour la structure
