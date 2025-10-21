@@ -33,7 +33,9 @@ export function updateTextLanguage(element=document.body) {
         langElement.value = language === 'en' ? 'English' : 'Français';
         // Update prospectus language
         const prospectusButton = element.querySelector(`${selectorPrefix} #prospectus`);
-        prospectusButton.href = language === 'en' ? '/assets/sponsors/prospectus_english.pdf' : '/assets/sponsors/prospectus_french.pdf';
+        if (prospectusButton) {
+            prospectusButton.href = language === 'en' ? '/assets/sponsors/prospectus_english.pdf' : '/assets/sponsors/prospectus_french.pdf';
+        }
     }
 }
 
