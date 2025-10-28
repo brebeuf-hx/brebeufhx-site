@@ -31,6 +31,11 @@ export function updateTextLanguage(element=document.body) {
         // It doesn't exist in the components lol
         const langElement = element.querySelector(`${selectorPrefix} [name="entry.854837853"]`);
         langElement.value = language === 'en' ? 'English' : 'Français';
+        // Update prospectus language
+        const prospectusButton = element.querySelector(`${selectorPrefix} #prospectus`);
+        if (prospectusButton) {
+            prospectusButton.href = language === 'en' ? '/assets/sponsors/prospectus_english.pdf' : '/assets/sponsors/prospectus_french.pdf';
+        }
     }
 }
 
