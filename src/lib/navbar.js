@@ -6,6 +6,7 @@ const navbar = document.querySelector('#navbar');
 const logo = document.querySelector('#logo');
 const hx = document.querySelector('#hx');
 const langBtn = document.querySelector('#lang-btn');
+const mlhBanner = document.querySelector('#mlh-trust-badge');
 
 const navLinks = Array.from(navMenu.querySelectorAll('a'))
 const hamburgerLayers = Array.from(hamburger.querySelectorAll('span'));
@@ -41,6 +42,9 @@ export function addNavbarBackground(mobileMenu) {
     hx.classList.remove('from-ice-blue-100','to-ice-blue-200');
     langBtn.classList.add('bg-ice-blue-500', 'text-white');
     langBtn.classList.remove('bg-white', 'text-ice-blue-500');
+
+    mlhBanner.href = 'https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=blue';
+    mlhBanner.children[0].src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-blue.svg';
 }
 
 export function removeNavbarBackground() {
@@ -67,6 +71,9 @@ export function removeNavbarBackground() {
     hx.classList.remove('from-ice-blue-400','to-ice-blue-600');
     langBtn.classList.add('bg-white', 'text-ice-blue-500');
     langBtn.classList.remove('bg-ice-blue-500', 'text-white');
+
+    mlhBanner.href = 'https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white';
+    mlhBanner.children[0].src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg';
 }
 
 // Navbar background //
