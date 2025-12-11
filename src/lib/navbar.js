@@ -43,8 +43,13 @@ export function addNavbarBackground(mobileMenu) {
     langBtn.classList.add('bg-ice-blue-500', 'text-white');
     langBtn.classList.remove('bg-white', 'text-ice-blue-500');
 
-    mlhBanner?.href = 'https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=blue';
-    mlhBanner?.children?.[0]?.src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-blue.svg';
+    if (mlhBanner) {
+        mlhBanner.href = 'https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=blue';
+        // Check if children exist before assigning src
+        if (mlhBanner.children && mlhBanner.children[0]) {
+            mlhBanner.children[0].src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-blue.svg';
+        }
+    }
 }
 
 export function removeNavbarBackground() {
@@ -72,9 +77,12 @@ export function removeNavbarBackground() {
     langBtn.classList.add('bg-white', 'text-ice-blue-500');
     langBtn.classList.remove('bg-ice-blue-500', 'text-white');
 
-    mlhBanner?.href = 'https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white';
-    mlhBanner?.children?.[0]?.src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg';
-}
+    if (mlhBanner) {
+        mlhBanner.href = 'https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white';
+        if (mlhBanner.children && mlhBanner.children[0]) {
+            mlhBanner.children[0].src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg';
+        }
+    }}
 
 // Navbar background //
 window.addEventListener('scroll', () => {
