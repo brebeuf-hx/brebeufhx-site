@@ -82,7 +82,8 @@ export function removeNavbarBackground() {
         if (mlhBanner.children && mlhBanner.children[0]) {
             mlhBanner.children[0].src = 'https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg';
         }
-    }}
+    }
+}
 
 // Navbar background //
 window.addEventListener('scroll', () => {
